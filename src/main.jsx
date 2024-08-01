@@ -1,13 +1,14 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import { App } from './App';
+import { GlobalCSS } from './GlobalCSS';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter basename="/react_vite">
+  <StrictMode>
+    <BrowserRouter basename="/test-ub-tweets">
+      <GlobalCSS />
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </StrictMode>
 );
