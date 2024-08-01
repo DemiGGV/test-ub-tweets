@@ -114,7 +114,7 @@ const Tweets = () => {
             textAlign: 'center',
           }}
         >
-          Empty list!
+          { followedArr.length === 0 ? 'Empty list!' : 'Loading...'}
         </p>
       )}
     </>
