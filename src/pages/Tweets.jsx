@@ -114,7 +114,7 @@ const Tweets = () => {
             textAlign: 'center',
           }}
         >
-          ...Loading
+          Empty list!
         </p>
       )}
     </>
