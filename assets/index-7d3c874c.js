@@ -206,7 +206,7 @@ Error generating stack: `+i.message+`
   &:hover {
     background-color: ${e=>e.disabled?"var(--colors-text-light);":"var(--colors-button-enabled)"};
   }
-`,kv=({currentPage:e,lastPage:t,setPage:n,incrementPage:r,decrementPage:o})=>O.jsxs(Sv,{children:[O.jsx(Xt,{onClick:()=>n(1),disabled:e===1,children:"«"}),O.jsx(Xt,{onClick:()=>o(e),disabled:e===1,children:"‹"}),e>2&&O.jsx(xv,{children:"..."}),e>=2&&O.jsx(Xt,{onClick:()=>n(e-1),children:e-1}),O.jsx(Xt,{$current:!0,onClick:()=>n(e),children:e}),e<=t-1&&O.jsx(Xt,{onClick:()=>n(e+1),children:e+1}),e<t-1&&O.jsx(Ev,{children:"..."}),O.jsx(Xt,{onClick:()=>r(e),disabled:e===t,children:"›"}),O.jsx(Xt,{onClick:()=>n(t),disabled:e===t,children:"»"})]}),Cv=Z.div`
+`,kv=({currentPage:e,lastPage:t,setPage:n,incrementPage:r,decrementPage:o})=>O.jsxs(Sv,{children:[O.jsx(Xt,{onClick:()=>o(e),disabled:e===1,children:"‹"}),e>2&&O.jsx(Xt,{onClick:()=>n(1),disabled:e===1,children:"1"}),e>3&&O.jsx(xv,{children:"..."}),e>=2&&O.jsx(Xt,{onClick:()=>n(e-1),children:e-1}),O.jsx(Xt,{$current:!0,onClick:()=>n(e),children:e}),e<=t-1&&O.jsx(Xt,{onClick:()=>n(e+1),children:e+1}),e<t-2&&O.jsx(Ev,{children:"..."}),e<t-1&&O.jsx(Xt,{onClick:()=>n(t),disabled:e===t,children:t}),O.jsx(Xt,{onClick:()=>r(e),disabled:e===t,children:"›"})]}),Cv=Z.div`
   display: flex;
   align-items: center;
   justify-content: center;
