@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Label = styled.label`
   margin-bottom: 40px;
-  padding: 5px;
   
   display: flex;
   justify-content: center;
@@ -15,6 +14,7 @@ export const Text = styled.span`
 `;
 
 export const Select = styled.select`
+  padding: 5px;
   width: 200px;
   height: 35px;
   border-radius: 5px;
