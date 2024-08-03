@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const Label = styled.label`
+  margin-bottom: 40px;
+  padding: 5px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 12px;
-  margin-bottom: 40px;
 `;
 
 export const Text = styled.span`
