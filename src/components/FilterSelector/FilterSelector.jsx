@@ -1,11 +1,11 @@
 import { statusFilters } from '../../utils/constants.js';
-import { Label } from './FilterSelector.styles';
+import { Label, Text, Select } from './FilterSelector.styles';
 
 export const FilterSelector = ({ setFilter, filter }) => {
   return (
     <Label title="Choosing the filter">
-      <span>Choose filter:</span>
-      <select
+      <Text>Choose filter:</Text>
+      <Select
         onChange={e => {
           setFilter(e.target.value);
         }}
@@ -15,7 +15,7 @@ export const FilterSelector = ({ setFilter, filter }) => {
         <option value={statusFilters.all}>All</option>
         <option value={statusFilters.follow}>Follow</option>
         <option value={statusFilters.following}>Following</option>
-      </select>
+      </Select>
     </Label>
   );
 };

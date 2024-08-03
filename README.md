@@ -4,16 +4,18 @@ In addition to the original requirements, a slider with pagination and animation
 
 ## Technologies Used
 
+- **Vite**
 - **JavaScript**
 - **React**
+- **React-Router**
 - **Styled-Components**
 
 ## Features
 
-- **Slider with Pagination**: Navigate through the slides seamlessly.
-- **Smooth Animations**: Enjoy a visually appealing experience.
 - **React Environment**: Developed using the React library for building user interfaces.
 - **Styled-Components**: Styled using the power of styled-components for scoped and reusable CSS.
+- **Slider with Pagination**: Navigate through the slides seamlessly.
+- **Smooth Animations**: Enjoy a visually appealing experience.
 
 ## Installation
 
@@ -39,8 +41,8 @@ Feel free to fork the project, create a new branch, and submit a pull request wi
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License.
 
 ---
 
-**Made with ❤️ by Your Name**
+**Made with ❤️**
