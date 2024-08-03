@@ -1,4 +1,4 @@
-import { statusFilters } from '../../pages/Tweets';
+import { statusFilters } from '../../utils/constants.js';
 import { Label } from './FilterSelector.styles';
 
 export const FilterSelector = ({ setFilter, filter }) => {

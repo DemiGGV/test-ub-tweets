@@ -2,12 +2,16 @@ import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
 
 export const GlobalCSS = createGlobalStyle`
+
 :root {
   --colors-main-light: #EBD8FF;
   --colors-main-dark: #373737;
+
   --colors-button-enabled: #5CD3A8;
   --colors-button-hovered: #fff;
   --colors-button-default: #EBD8FF;
+    
+  --colors-button-background: #00000010;
   
   --colors-avatar-bg: #5736A3;
   --colors-text-light: #EBD8FF;

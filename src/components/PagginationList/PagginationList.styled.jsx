@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ButtonList = styled.div`
-  margin: 0 auto;
+  margin: 0 auto 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,10 +28,14 @@ export const Button = styled.button`
   border-radius: 50%;
   font-size: 25px;
   transition: var(--transition-bgc-global);
-  background-color: ${props =>
-    props.$current ? 'var(--colors-button-enabled)' : 'transparent'};
+  background-color: ${(props) =>
+    props.$current ? 'var(--colors-button-enabled)' : 'var(--colors-button-background)'};
   &:hover {
-    background-color: ${props =>
+    cursor: ${(props) =>
+      props.disabled
+        ? 'default'
+        : 'pointer'};
+    background-color: ${(props) =>
       props.disabled
         ? 'var(--colors-text-light);'
         : 'var(--colors-button-enabled)'};

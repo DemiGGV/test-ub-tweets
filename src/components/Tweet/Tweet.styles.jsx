@@ -17,14 +17,6 @@ export const TweetMainBox = styled.div`
     var(--colors-main-gradient-middle),
     var(--colors-main-gradient-start) 75%
   );
-  box-shadow: var(--shadows-main);
-
-  animation: 250ms show ease;
-
-  @keyframes show {
-    from { opacity: 0.7; }
-    to { opacity: 1; }
-  }
 `;
 
 export const TopBox = styled.div`

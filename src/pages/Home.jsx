@@ -3,6 +3,8 @@ const Home = () => {
     <p
       style={{
         textAlign: 'center',
+        fontSize: 36,
+        marginTop: 150
       }}
     >
       Hier könnte Ihre Anzeige stehen.

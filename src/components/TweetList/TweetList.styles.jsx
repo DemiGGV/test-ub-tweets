@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const SectionBox = styled.ul`
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(3, 380px);
-  padding: 32px;
-  grid-gap: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  transform: translateX(-${props => props.$offsetView}px);
+  transition: transform 500ms ease-in-out;
+  box-shadow: var(--shadows-main);
 `;

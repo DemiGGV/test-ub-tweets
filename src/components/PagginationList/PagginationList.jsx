@@ -8,48 +8,46 @@ import {
 export const PagginationList = ({
   currentPage,
   lastPage,
-  setPage,
-  incrementPage,
-  decrementPage,
+  setCurrentPage
 }) => {
   return (
     <ButtonList>
       <Button
-        onClick={() => decrementPage(currentPage)}
+        onClick={() => setCurrentPage(prevPage => prevPage - 1)}
         disabled={currentPage === 1}
       >
         &lsaquo;
       </Button>
       {currentPage > 2 && (
-      <Button onClick={() => setPage(1)} disabled={currentPage === 1}>
-        1
-      </Button>
+        <Button onClick={() => setCurrentPage(1)} disabled={currentPage === 1}>
+          1
+        </Button>
       )}
       {currentPage > 3 && <TripletLeft>...</TripletLeft>}
       {currentPage >= 2 && (
-        <Button onClick={() => setPage(currentPage - 1)}>
+        <Button onClick={() => setCurrentPage(currentPage - 1)}>
           {currentPage - 1}
         </Button>
       )}
-      <Button $current onClick={() => setPage(currentPage)}>
+      <Button $current onClick={() => setCurrentPage(currentPage)}>
         {currentPage}
       </Button>
       {currentPage <= lastPage - 1 && (
-        <Button onClick={() => setPage(currentPage + 1)}>
+        <Button onClick={() => setCurrentPage(currentPage + 1)}>
           {currentPage + 1}
         </Button>
       )}
       {currentPage < lastPage - 2 && <TripletRight>...</TripletRight>}
-      {currentPage < lastPage - 1 && 
+      {currentPage < lastPage - 1 && (
+        <Button
+          onClick={() => setCurrentPage(lastPage)}
+          disabled={currentPage === lastPage}
+        >
+          {lastPage}
+        </Button>
+      )}
       <Button
-        onClick={() => setPage(lastPage)}
-        disabled={currentPage === lastPage}
-      >
-        {lastPage}
-      </Button>
-      }
-      <Button
-        onClick={() => incrementPage(currentPage)}
+        onClick={() => setCurrentPage(prevPage => prevPage + 1)}
         disabled={currentPage === lastPage}
       >
         &rsaquo;
